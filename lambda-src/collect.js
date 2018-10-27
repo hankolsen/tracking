@@ -52,6 +52,9 @@ exports.handler = (event, context, callback) => {
   }
 
   callback(null, {
+    headers: {
+      'Content-Type': 'image/gif',
+    },
     statusCode: 200,
     body: '',
   });
