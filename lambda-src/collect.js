@@ -52,10 +52,11 @@ exports.handler = (event, context, callback) => {
   }
 
   callback(null, {
-    statusCode: 301,
     headers: {
-      Location: `${process.env.BASE_URL}/image.gif`,
+      'Content-Type': 'image/gif',
+      'Cache-Control': 'no-cache, no-store, must-revalidate',
     },
+    statusCode: 200,
     body: '',
   });
 };

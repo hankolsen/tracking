@@ -4,8 +4,7 @@
   "description": "Tracking email open",
   "scripts": {
     "build": "netlify-lambda build lambda-src",
-    "lambda-serve": "netlify-lambda serve lambda-src",
-    "dev": "ws  -r '/.netlify/functions/*->http://localhost:9000/$1' -d src & yarn lambda-serve"
+    "lambda-serve": "netlify-lambda serve lambda-src"
   },
   "author": "Hank",
   "license": "ISC",
