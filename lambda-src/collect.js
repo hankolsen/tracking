@@ -57,6 +57,6 @@ exports.handler = (event, context, callback) => {
       'Cache-Control': 'no-cache, no-store, must-revalidate',
     },
     statusCode: 200,
-    body: 'GIF89a�����,D;',
+    body: '',
   });
 };
