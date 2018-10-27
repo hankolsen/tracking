@@ -54,6 +54,8 @@ exports.handler = (event, context, callback) => {
   callback(null, {
     headers: {
       'Content-Type': 'image/gif',
+      'Content-Length': 35,
+      'Cache-Control': 'no-cache, no-store, must-revalidate',
     },
     statusCode: 200,
     body: '',
